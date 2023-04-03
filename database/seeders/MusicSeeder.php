@@ -21,12 +21,13 @@ class MusicSeeder extends Seeder
         for ($i=0; $i <10; $i++) {
             $newMusic = new Music();
             $newMusic->title = $faker->word();
-            $newMusic->album = $faker->words();
+            $newMusic->album = $faker->word();
             $newMusic->author = $faker->name();
             $newMusic->editor = $faker->name();
             $newMusic->length = $faker->name();
             $newMusic->poster = $faker->imageUrl(640, 480, 'singers', true);
 
+            $newMusic->save();
         }
     }
 }
