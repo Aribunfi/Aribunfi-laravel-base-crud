@@ -22,9 +22,9 @@ Route::get('/', function () {
 //  });
 
 Route::get('/album', function () {
-    return view('album');
+return view('album');
 });
 
-Route::get('/artist', function () {
-    return view('italians');
-});
+// Route::get('/artist', function () {
+//     return view('italians');
+// });
