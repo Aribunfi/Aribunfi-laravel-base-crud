@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Laravel 9 + Bootstrap Template</title>
+  <title>{{ env('APP_NAME')}}</title>
 
   {{-- Includiamo gli assets con la direttiva @vite --}}
   @vite('resources/js/app.js')
@@ -15,22 +15,22 @@
 
   @include('partials._navbar')
 
-
+  @yield('partials.cards')
 
   <main>
 
-    {{-- @foreach($music as $music)
+    {{-- @foreach($music as $music) --}}
 
     <div class="card" style="width: 18rem;">
       <img src="{{$music->poster}}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">{{$music->title}}</h5>
-        <p class="card-text">{{$music->author}}</p>
+        {{-- <h5 class="card-title">{{$music->title}}</h5>
+        <p class="card-text">{{$music->author}}</p> --}}
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
 
-    @endforeach --}}
+    {{--@endforeach --}}
 
 
 

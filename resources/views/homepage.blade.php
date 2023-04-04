@@ -1,8 +1,12 @@
+@extends('layouts.app')
+
+
 @section('content')
     Contenuto qui
 @endsection
 
 
-@section('content')
-    Contenuto qui
+@section('sezione_cards')
+
+
 @endsection
