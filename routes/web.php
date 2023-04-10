@@ -21,9 +21,9 @@ Route::get('/', function () {
 //     return view('views.homepage');
 //  });
 
-Route::get('/album', function () {
-return view('album');
-});
+// Route::get('/album', function () {
+// return view('album');
+// });
 
 // Route::get('/artist', function () {
 //     return view('italians');
