@@ -9,5 +9,12 @@ use Illuminate\Http\Request;
 
 class MusicController extends Controller
 {
-    //
+    public function index()
+
+{
+    $music = Music::paginate(8);
+    return view('music.index', compact('music'));
+}
+
+    
 }
