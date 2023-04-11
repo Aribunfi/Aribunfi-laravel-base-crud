@@ -23,5 +23,12 @@ public function show(Music $music)
     return view('music.show', compact('music'));
 }
 
+public function create ()
+
+{
+    return view('music.create');
+}
+
+
     
 }
