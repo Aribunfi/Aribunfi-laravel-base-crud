@@ -14,18 +14,9 @@ use App\Http\Controllers\MusicController;
 |
 */
 
+Route::resource('music', MusicController::class);
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/homepage', function () {
-//     return view('views.homepage');
-//  });
-
-// Route::get('/album', function () {
-// return view('album');
-// });
-
-// Route::get('/artist', function () {
-//     return view('italians');
-// });
