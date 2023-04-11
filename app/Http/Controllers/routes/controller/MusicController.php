@@ -37,5 +37,10 @@ public function store(Request $request)
     $music->save();
     return redirect()->route('music.show', $music);
 }
+
+public function edit(Music $music)
+{
+  return view('music.edit', compact('music'));
+}
     
 }
