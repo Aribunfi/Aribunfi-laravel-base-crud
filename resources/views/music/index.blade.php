@@ -18,7 +18,9 @@
             <td>{{ $music->editor }}</td>
             <td>{{ $music->length }}</td>
             <td>{{ $music->poster }}</td>
-            <td>...</td>
+            <td>
+                <a href="{{ route('music.show', $music )}}">Dettaglio</a>
+            </td>
         </tr>
         @endforeach
     </tbody>
