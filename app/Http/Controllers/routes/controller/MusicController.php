@@ -33,6 +33,7 @@ public function create ()
 public function store(Request $request)
 {
     $data = $request->all();
+    $data = $this->validation($request->all());
     $music = new Music;
     $music->fill($data);
     $music->save();
@@ -48,6 +49,7 @@ public function edit(Music $music)
 public function update(Request $request, Music $music)
 {
     $data = $request->all();
+    $data = $this->validation($request->all(), $music->id);
     $music->update($data);
     return redirect()->route('music.show', $music);
 }
