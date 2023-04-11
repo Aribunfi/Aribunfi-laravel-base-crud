@@ -1,3 +1,7 @@
+
+<a href="{{ route('music.create') }}" role="button" class="btn btn-primary">Aggiungi brano</a>
+
+
 <table class="table">
     <thead>
         <tr>
@@ -19,7 +23,7 @@
             <td>{{ $music->length }}</td>
             <td>{{ $music->poster }}</td>
             <td>
-                <a href="{{ route('music.show', $music )}}">Dettaglio</a>
+                <a href="{{ route('music.show', $music)}}"></a>
             </td>
         </tr>
         @endforeach
