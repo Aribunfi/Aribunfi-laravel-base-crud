@@ -24,6 +24,8 @@
             <td>{{ $music->poster }}</td>
             <td>
                 <a href="{{ route('music.show', $music)}}"></a>
+                <a href="{{ route('music.edit', $music) }}">Modifica</a>
+            
             </td>
         </tr>
         @endforeach
