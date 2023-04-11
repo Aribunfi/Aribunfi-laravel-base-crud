@@ -42,5 +42,13 @@ public function edit(Music $music)
 {
   return view('music.edit', compact('music'));
 }
+
+
+public function update(Request $request, Music $music)
+{
+    $data = $request->all();
+    $music->update($data);
+    return redirect()->route('music.show', $music);
+}
     
 }
