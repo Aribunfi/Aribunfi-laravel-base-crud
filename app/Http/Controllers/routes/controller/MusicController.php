@@ -29,6 +29,13 @@ public function create ()
     return view('music.create');
 }
 
-
+public function store(Request $request)
+{
+    $data = $request->all();
+    $music = new Music;
+    $music->fill($data);
+    $music->save();
+    return redirect()->route('music.show', $music);
+}
     
 }
