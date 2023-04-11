@@ -23,9 +23,11 @@
             <td>{{ $music->length }}</td>
             <td>{{ $music->poster }}</td>
             <td>
-                <a href="{{ route('music.show', $music)}}"></a>
+                <a href="{{ route('music.show', $music)}}">Dettaglio</a>
                 <a href="{{ route('music.edit', $music) }}">Modifica</a>
-            
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete-modal-{{ $music->id }}">
+                    Elimina              
+                  </button>
             </td>
         </tr>
         @endforeach
@@ -34,3 +36,5 @@
 
 
 {{ $music->links('pagination::bootstrap-5') }}
+
+
