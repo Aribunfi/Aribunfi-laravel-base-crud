@@ -50,5 +50,12 @@ public function update(Request $request, Music $music)
     $music->update($data);
     return redirect()->route('music.show', $music);
 }
+
+
+public function destroy(Music $music)
+{
+    $music->delete();
+    return redirect()->route('music.index');
+}
     
 }
