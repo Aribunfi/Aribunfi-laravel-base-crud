@@ -16,5 +16,12 @@ class MusicController extends Controller
     return view('music.index', compact('music'));
 }
 
+public function show(Music $music)
+
+
+{
+    return view('music.show', compact('music'));
+}
+
     
 }
